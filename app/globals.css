@@ -16,6 +16,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #a78bfa;
+    --secondary: #ec4899;
   }
 }
 
@@ -24,3 +26,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* @utility  backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      } */

@@ -38,14 +38,22 @@ const HeroSection = () => {
             into reality through technology.
           </p>
           {/* Links */}
-          {/* <div>
-            <Link>
+          <div>
+            <Link
+             href="/#contact"
+             className='px-6 py-3 inline-block w-full sm:w-fit mr-4 rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] hover:bg-slate-800 text-white'
+            >
                Hire Me
             </Link>
-            <Link>
-            Download Resume
+            <Link
+            href="/"
+            className='px-1 py-1 inline-block w-full sm:w-fit mr-4 rounded-full bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] hover:bg-slate-800 text-white mt-3'
+            >
+           <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
             </Link>
-          </div> */}
+          </div>
         </div>
         {/* img section */}
         <div className='col-span-4 place-self-center mt-4 md:mt-0'>
