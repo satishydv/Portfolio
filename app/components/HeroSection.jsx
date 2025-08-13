@@ -57,14 +57,14 @@ const HeroSection = () => {
         </div>
         {/* img section */}
         <div className='col-span-4 place-self-center mt-4 md:mt-0'>
-          <div className='rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[300px] md:h-[400px] relative'>
+          <div className='rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[400px] md:h-[400px] relative'>
               <Image
             src="/images/hero-img.png"
             alt="Hero Image"
             width={300}
             height={300}
             // this class is used to center the image relative to the parent div
-            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
+            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 '
           />
           </div>
         </div>
