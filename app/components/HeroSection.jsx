@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { motion } from "framer-motion";
 
 import { TypeAnimation } from 'react-type-animation';
 
@@ -10,7 +11,11 @@ const HeroSection = () => {
     <section className='lg:py-16'>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         {/* Text section */}
-        <div className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
+        <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
           <h1 className='text-white mb-4 text-4xl sm:text-5xl md:text-8xl font-extrabold lg:leading-normal'>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I&apos;m{" "}
@@ -54,9 +59,13 @@ const HeroSection = () => {
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
         {/* img section */}
-        <div className='col-span-4 place-self-center mt-4 md:mt-0'>
+        <motion.div
+         initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        className='col-span-4 place-self-center mt-4 md:mt-0'>
           <div className='rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[400px] md:h-[400px] relative'>
               <Image
             src="/images/hero-img.png"
@@ -67,7 +76,7 @@ const HeroSection = () => {
             className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 '
           />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

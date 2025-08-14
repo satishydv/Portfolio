@@ -54,8 +54,8 @@ const AboutSection = () => {
 
   return (
    <section className='text-white' id='about'>
-    <div className='md:grid md:grid-cols-2 gap-8 items-center'>
-        <Image src='/images/about-image.png' width={300} height={300} alt='desktop'/>
+    <div className='md:grid md:grid-cols-2 gap-8 items-center py-8'>
+        <Image src='/images/about-image.png' width={500} height={500} alt='desktop'/>
        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
          <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
         <p>
@@ -90,7 +90,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
         </div>
-        <div className='mt-8'>
+        <div className='mt-8 mb-8'>
             {TAB_DATA.find((t) => t.id === activeTab).content}
         </div>
        </div>
