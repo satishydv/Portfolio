@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/satishydv/Portfolio",
-    previewUrl: "https://ai-resume-analyzer-lime-chi.vercel.app/",
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -92,12 +92,12 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
+          name="Frontend"
           isSelected={tag === "Frontend"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
+          name="Fullstack"
           isSelected={tag === "Fullstack"}
         />
       </div>
