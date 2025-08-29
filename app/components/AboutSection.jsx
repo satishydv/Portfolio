@@ -5,6 +5,43 @@ import TabButton from './TabButton'
 
 const TAB_DATA = [
     {
+        title: "Certifications",
+        id: "certifications",
+        content: (
+            <ul className='list-disc pl-2 space-y-4'>
+                <li>
+                    <a 
+                        href="https://coursera.org/share/6585a7ab693fb8dc55913e3c74465af2" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                    >
+                        AWS Cloud Technical Essentials
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://coursera.org/share/1342c6c35153e5f33e6f41f8a84dc8e0" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                    >
+                        Microsoft Azure SQL 
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                        </svg>
+                    </a>
+                </li>
+                
+            </ul>
+        ),
+    },
+    {
         title: "Skills",
         id: "skills",
         content: (
@@ -27,17 +64,8 @@ const TAB_DATA = [
                 <li>Bachelor of computer Applications</li>
             </ul>
         ),
-    },
-    {
-        title: "Certifications",
-        id: "certifications",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-            </ul>
-        ),
     }
+ 
 ]
 
 

@@ -31,8 +31,12 @@ const Navbar = () => {
             {/* Logo section */}
         <Link
         href={"/"}
-        className="text-2xl md:text-5xl text-white font-semibold">
-        LOGO
+        className="text-xl md:text-3xl font-semibold">
+        <span className="text-[#8245ec]">&lt;</span>
+          <span className="text-white">Satish</span>
+          <span className="text-[#8245ec]">/</span>
+          <span className="text-white">Yadav</span>
+          <span className="text-[#8245ec]">&gt;</span>
         </Link>
         {/* mobile menu */}
         <div className='mobile-menu block md:hidden'>

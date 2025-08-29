@@ -8,54 +8,54 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "Javascript, React, Framer Motion",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/satishydv/Portfolio",
+    previewUrl: "https://ai-resume-analyzer-lime-chi.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Zenify",
+    description: "Service-based SaaS Application",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/satishydv/Zenify",
+    previewUrl: "https://zenify-lake.vercel.app/",
   },
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Project 3 description",
+    description: "React, Next.js, Sanity CMS, shadcn/ui",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Fullstack"],
+    gitUrl: "https://github.com/satishydv/Ecommerce-2",
+    previewUrl: "https://ecommerce-2-rose.vercel.app/",
   },
   {
     id: 4,
     title: "Food Ordering Application",
-    description: "Project 4 description",
+    description: "React.js, Next.js, Tailwind CSS",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/satishydv/Yumzy",
+    previewUrl: "https://yumzy-nine.vercel.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Resume Analyzer",
+    description: "AI-based Resume Analyzer",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Fullstack"],
+    gitUrl: "https://github.com/satishydv/ai-resume-analyzer",
+    previewUrl: "https://ai-resume-analyzer-lime-chi.vercel.app/",
   },
   {
     id: 6,
     title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    description: "Coming Soon...",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Fullstack"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -93,12 +93,12 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="Web"
-          isSelected={tag === "Web"}
+          isSelected={tag === "Frontend"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
-          isSelected={tag === "Mobile"}
+          isSelected={tag === "Fullstack"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
